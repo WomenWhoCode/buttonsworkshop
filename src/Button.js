@@ -1,9 +1,14 @@
 import React from 'react';
 
 const Button = (props) => {
-  const { color, onClick } = props
+  const { color, onClick, children } = props
   return (
-    <button style={{ color: color }} onClick={onClick}></button>
+    <button
+      style={{ color: color }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
   )
 }
 
