@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <button
       style={{ color: color }}
-      onClick={onClick}
+      onClick={() => onClick(color)}
     >
       {children}
     </button>
