@@ -5,6 +5,7 @@ import Button from './Button.js';
 class App extends Component {
   state = {
     selectedColor: 'white',
+    // TODO: we use "white" a lot now, so it would be better to extract it to a constant
   }
 
   setColor = (color) => {
@@ -19,7 +20,12 @@ class App extends Component {
       </h2>
       <div>
         <Button color={'green'} onClick={this.setColor}>Green</Button>
+        <Button color={'green'}>Green</Button>
+
       </div>
+      { this.state.selectedColor !== 'white' && 
+        <Button onClick={() => this.setColor('white')}>Reset Color</Button>
+      }
     </div> 
     );
   }
