@@ -1,5 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Introduction
+
+### What is React
+
+- React is a component-based library.
+- every part of your web application can be mapped to a component.
+- this is also good for developers as it allows better code splitting -> good separation of conserns and better tests
+- the change in one component doen't require the browser to render the whole application -> big advantage compared to other previous libraries / frameworks.
+- beneficial when you are building web application where data changes very frequently
+- this saves the browser the trouble of reloading the whole application when some change happens.
+- it makes it possible to buold more complex user interactions while keeping a good browser performance.
+
+### Why learn React
+
+
 ## Available Scripts
 
 In the project directory, you can run:
